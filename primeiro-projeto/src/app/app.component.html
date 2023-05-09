@@ -1,5 +1,10 @@
 <app-header></app-header>
 
-<h1>Olá Mundo!</h1>
+<!-- <app-diretivas></app-diretivas> -->
 
-<app-novo-componente></app-novo-componente>
+<app-data-binding></app-data-binding>
+
+<h3>Lista de nomes:</h3>
+<ul>
+  <li *ngFor="let nome of nomes">{{ nome }}</li>
+</ul>
