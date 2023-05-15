@@ -1,31 +1,28 @@
 <h3>*ngIf</h3>
+
 <div *ngIf="cursos.length > 0">
-  Lista de cursos
+Lista de cursos
 </div>
+
 <div *ngIf="cursos.length == 0">
   Não existem cursos.
 </div>
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou Esconder Cursos</button>
 
 <h3>*ngFor</h3>
 <ul>
   <li *ngFor="let curso of cursos, let i = index">
-    {{i}} - {{curso}}
+  {{i}} - {{curso}}
   </li>
 </ul>
 
 <h1>
-  <i class="bi" [class.bi-star]="!meuFavorito" [class.bi-star-fill]="meuFavorito" (click)="onClick()">
+  <i class="bi"
+  [class.bi-star]="!meuFavorito"
+  [class.bi-star-fill]="meuFavorito"
+  (click)="onClick()">
   </i>
 </h1>
 
-<h1>
-  <i class="bi" [ngClass]="{
-  'bi-star': !meuFavorito,
-  'bi-star-fill': meuFavorito
-}"
- (click)="onClick()">
-  </i>
-</h1>
 
-<br>
-<button (click)="onMostrarCursos()">Mostrar ou Esconder Cursos</button>

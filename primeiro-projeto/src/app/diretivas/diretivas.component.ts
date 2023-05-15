@@ -9,6 +9,7 @@ export class DiretivasComponent implements OnInit{
     cursos: string[] = ["Angular","React","Vue"];
 
     mostrarCursos : boolean = false;
+    meuFavorito: boolean | undefined;
 
     constructor() { }
 

@@ -8,19 +8,26 @@ import { MeuPrimeiroComponenteComponent } from './meu-primeiro-componente/meu-pr
 import { DiretivasComponent } from './diretivas/diretivas.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { PedidosComponent } from './pedidos/pedidos.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponenteComponent,
     DiretivasComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    HomeComponent,
+    ProdutosComponent,
+    PedidosComponent,
   ],
   imports:[
     BrowserModule,
     AppRoutingModule,
-    CoreModule,
-    FormsModule
+    FormsModule,
+    CoreModule
   ],
 
   providers: [TesteService],
