@@ -1,0 +1,18 @@
+h1{
+  color:rgb(159, 128, 245);
+  font-size: 42pt;
+}
+.flex-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-content: center;;
+}
+
+.flex-item{
+  background-color:rgb(226, 182, 247);
+  font-size:30px;
+
+}
+
+
